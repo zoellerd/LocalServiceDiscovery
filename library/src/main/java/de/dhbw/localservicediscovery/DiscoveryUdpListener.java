@@ -26,10 +26,10 @@ public class DiscoveryUdpListener extends AsyncTask<Void, Void, String> {
     public static final int SOCKET_TIMEOUT_MILLIS = 2000;
 
     public AtomicBoolean gotOwnDatagram;
-    DatagramSocket socket;
 
     private static final String HMAC_SECRET = "eFqqDnFNeLLJ";
     private ArrayList<DiscoveryListener> discoveryListener = new ArrayList<>();
+    private DatagramSocket socket;
 
     public DiscoveryUdpListener(){
         this.gotOwnDatagram = new AtomicBoolean(false);
