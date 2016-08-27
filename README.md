@@ -1,4 +1,4 @@
-# Local service discovery via UDP
+# Local service discovery via UDP (client side)
 
 ### Usage
 
