@@ -5,12 +5,14 @@
 1. Implement `DiscoveryListener`
 2. Override `void onServiceDiscoveryStatusUpdate(String localIpAddr)`.
 3. Call:
+   
    ```
    DiscoveryUdpListener listener = new DiscoveryUdpListener();
    listener.subscribe(this);
    listener.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
    new DiscoveryUdpBroadcaster(context, listener.gotOwnDatagram).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
    ```
+   
 
 Possible return values are:
 
